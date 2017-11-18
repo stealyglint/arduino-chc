@@ -8,7 +8,7 @@ boolean chstate = LOW;
 
 void setup() {
   // put your setup code here, to run once:
-// initialize digital pin LED_BUILTIN as an output.
+// initialize digital pins RL1 LED1 SW1 SW2 and set RL1 to off.
   pinMode(RL1, OUTPUT);
   pinMode(LED1, OUTPUT);
   pinMode(SW1, INPUT);
@@ -17,7 +17,7 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // Main loop for controller:
   if (digitalRead(SW1) == HIGH)
   {
     if (demand == LOW){
